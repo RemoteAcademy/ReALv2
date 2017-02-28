@@ -1,0 +1,14 @@
+version: '2'
+services:
+  mongodb:
+    image: mongo
+    network_mode: host
+    volumes:
+      - ./db-data:/data/db
+    command: "/bin/bash -c \"mongod\""
+  webapp:
+    image: node
+    network_mode: host
+    volumes:
+      - ./Webapp:/usr/src/app
+    command: "/bin/bash -c \"cd /usr/src/app && gulp serve\""
