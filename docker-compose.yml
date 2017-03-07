@@ -3,6 +3,8 @@ services:
   mongodb:
     image: mongo
     network_mode: host
+    ports:
+      - "27017"
     volumes:
       - ./db-data:/data/db
     command: "/bin/bash -c \"mongod\""
@@ -11,4 +13,4 @@ services:
     network_mode: host
     volumes:
       - ./Webapp:/usr/src/app
-    command: "/bin/bash -c \"cd /usr/src/app && gulp serve\""
+    command: "/bin/bash -c \"cd /usr/src/app && npm install -g yo gulp-cli && gulp serve\""
