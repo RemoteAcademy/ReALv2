@@ -3,13 +3,13 @@ services:
   mongodb:
     image: mongo
     network_mode: host
-    ports:
-      - "27017"
     volumes:
       - ./db-data:/data/db
     command: "/bin/bash -c \"mongod\""
   webapp:
     image: node
+    ports:
+      - "3000:3000"
     network_mode: host
     volumes:
       - ./Webapp:/usr/src/app
