@@ -1,0 +1,88 @@
+
+
+body{
+	background: #2b423a;
+}
+
+#largeHeader{
+	font-size: 20px;
+	color: #ffffff;
+
+	position: fixed;
+	top: 10px;
+	left: 15%;
+}
+
+#header{
+	font-size: 18px;
+	color: #d1d1d1;
+
+	position: relative;
+	top: -26px;
+}
+
+.CentralTextBox{
+	background: #fff6e2;
+
+	border: 2px groove #000000;
+    color: #000000;
+    padding: 5px;
+    top-margin: 26px;
+
+    width: 600px;
+
+    position: fixed;
+    left: 15%;
+
+    display: block;
+
+    /*temp while trying to stop overlap*/
+    position: relative;
+    top: 60px;
+}
+
+#instructions{
+
+}
+
+#Questions{
+	position: relative;
+	top: 100px;
+}
+
+.box{
+	width: 580px;
+	height: 80px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	resize: vertical;
+}
+
+.rightSide{
+	display: inline-block;
+
+	position: relative;
+	left: 65%;
+}
+
+#videoFeed{
+	background: #ffffff;
+
+	border: 2px groove #000000;
+    color: #000000;
+    padding: 5px;
+
+    width: 350px;
+    height: 380px;
+
+/*
+    position: fixed;
+    top: 50px;
+    left: 65%;*/
+}
+
+
+
+
+
+

@@ -4,9 +4,11 @@
 
 		<title> Remote Academy Laboratory </title>
 
-
 		<link href='index.css' rel='stylesheet'>
 
+		<div id = "login">
+			<a href=?login=true> Login </a>
+		</div>
 
 	</head>
 <body>
