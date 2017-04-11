@@ -24,7 +24,6 @@
 <body>
 	<div id = "row">
 		<div class = "col-md-8">
-			<div class = "CentralPositioning">
 			<!--<div id = "header"> Introduction </div>-->
 			<h3> Introduction </h3>
 			<div class = "CentralTextBox", id = "instructions">
@@ -68,14 +67,12 @@
 						}
 						echo "</ol>";
 					?>
-
-
 			</div>
-		</div>
 
-		<button type="button" class="btn btn-lg btn-default"> Input or something </button>
+			<center>
+			<button type="button" class="btn btn-lg btn-default"> Finish Experiment </button>
+			</center>
 
-		<div class = "CentralPositioning">
 			<h3> Questions </h3>
 			<div class = "CentralTextBox", id = "Questions">
 				
@@ -89,27 +86,53 @@
 						);
 
 					foreach ($questions as $selected) {
-						echo "<br>". $selected . "</br>";
-						echo "<textarea class='AnswerBox'>". "Input Answer Here" ."</textarea>"; //TODO format textarea
-						//Also apparently text area size is editable? TODO
+						echo "<p>". $selected . "</p>";
+						echo "<textarea class='AnswerBox'>". "Input Answer Here" ."</textarea>";
 					}
 				?>
 
 			</div>
-			</div>
+
 		</div>
 
 		<div class = "col-md-4">
-		<div class = "rightSide">
+			<h3> Imagination powered video feed </h3>
 			<div class = "rightSideBox", id = "videoFeed">
-				<div id = "header"> Imagination powered video feed </div>
+				<?php
+					//Place php to open video feed here
+				?>
 			</div>
 
+			<h3> Inputs </h3>
 			<div class = "rightSideBox", id = "inputs">
-				<div id = "header"> Input </div>
-				Inputs
+				
+				<p>
+					<a class="btn btn-primary btn-lg" href="#" role="button"> Run Experiment </a>
+				</p>
+
+				<div id = "inputsSubsection"> <p>
+					Ramp Angle: <span id="inputSliderRange">0</span>˚
+					<input type="range" min="0" max="90" value="0" onchange="showValue(this.value)" />
+					<script type="text/javascript">
+						function showValue(newValue)
+						{
+							document.getElementById("inputSliderRange").innerHTML=newValue;
+						}
+					</script>
+				</p> </div>
+
+				<p>
+					<a class="btn btn-default" href="#" role="button"> Apply Settings </a>
+				</p>
 			</div>
-		</div>
+
+			<h3> Data Collected </h3>
+			<div class = "rightSideBox">
+				<?php
+					//TODO some way to collect data from pi?
+				?>
+			</div>
+
 		</div>
 	</div>
 
