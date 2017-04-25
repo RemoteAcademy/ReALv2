@@ -1,4 +1,4 @@
-
+/* Experiments Template CSS */
 
 body{
 	background: #2b423a;
@@ -11,6 +11,7 @@ h3{
 	color: #d1d1d1;
 }
 
+/* The header at the top of the page */
 #largeHeader{
 	background: #fff6e2;
 	border: 2px groove #000000;
@@ -20,6 +21,7 @@ h3{
 	font-size: 20px;
 }
 
+/* Refers to the Introduction (experiment info) and Questions */
 .CentralTextBox{
 	background: #fff6e2;
 
@@ -46,6 +48,8 @@ h3{
 	resize: vertical;
 }
 
+/********* Right side of the page **********/
+/* Right side: mostly focused on connecting to remote lab; */
 .rightSideBox{
 	background: #ffffff;
 

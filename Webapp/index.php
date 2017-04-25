@@ -7,7 +7,7 @@
 		<link href='index.css' rel='stylesheet'>
 
 		<div id = "login">
-			<a href=?login=true> Login </a>
+			<a href=?login=true> Login </a> <!-- TODO: swap to RCS identification for credit -->
 		</div>
 
 	</head>
