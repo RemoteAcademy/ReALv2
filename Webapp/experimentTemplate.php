@@ -29,7 +29,7 @@
 			<div class = "CentralTextBox", id = "instructions">
 				<b> Goal: </b>
 					<?php
-						$goal = "Get the goals somehow? fill in?";
+						$goal = "Science";
 						echo $goal;
 					?>
 

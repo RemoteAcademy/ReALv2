@@ -26,27 +26,27 @@
 			//TODO: In the future, might put all this in a for loop to iterate between classes
 
 			//Make a header for the relevant class
-			$className = "Temporary Class Name";
-			echo '<div id = classHeader>' . className . '</div>';
+			$className = "Remote Laboratory Academy Sample Class";
+			echo '<div id = classHeader>' . $className . '</div>';
 
 				// In reality, this is two methods of doing the same thing
 			//This method of listing things preferred, allow to import a list based on user, section by class?
 			$experiments = array(
 			//Should make it so that it pulls from a data base, based on user make different experiments available
-					"Experiment 1: Gravity Exists" => "404 Error probably",
+					"Experiment 1: Gravity Exists" => "http://localhost:8000/Webapp/experimentTemplate.php",
 					"Experiment 2: Accelerating Things" => "404 Error probably 2"
 				);
 
 			echo "<ol>";
 			foreach ($experiments as $key => $value) {
-				echo "<li> <a href=//" . $value . ">" . $key . "</a> </li>";//TODO: We could add something about due dates
+				echo "<li> <a href=" . $value . ">" . $key . "</a> </li>";//TODO: We could add something about due dates
 			}
 			echo "</ol>";
-
+/*
 			$files = scandir('./Experiments');
 			foreach($files as $title => $link){ //Note that this basically goes through all the html files, won't adjust to user
 			   echo'<p><a href="/Experiments/'.$link.'">'.$title.'</a>';
-			}
+			}*/
 		?>
 	</div>
 
