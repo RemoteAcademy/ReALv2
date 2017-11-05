@@ -1,7 +1,22 @@
 # ReALv2
 RemoteAcademy version 2 builds upon the conceptual foundation of RemoteAcademy, although rebuilding it to be more robust and future-proof.
 
-Original ReadMe below (needs to be updated):
+How To Run:
+
+1. Go into Webapp folder
+2. Shift + Right click -> "Open Powershell window here"
+3. Type "bash" (no quotes)
+4. Type "php -S localhost:8000" (no quotes)
+5. In any web broswer, type in as the URL: 127.0.0.1:8000
+
+To run the server on this machine such that it can be accessed by a different machine, use "php -S 0.0.0.0:80" instead.
+From the client machine, type in the IP address of the server with :80 appended.
+
+That's it!
+
+=================================================================================
+ReadMe from the original project:
+
 # Remote.Academy
 ### Rensselaer Polytechnic Institute
 ### Sponsored by RPI Physics Department and Rensselaer Center for Open Source Software
