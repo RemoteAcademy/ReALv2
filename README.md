@@ -1,7 +1,7 @@
 # ReALv2
 RemoteAcademy Version 2 builds upon the conceptual foundation of RemoteAcademy, rebuilding the project to be more robust and future-proof.
 
-How To Run (Windows):
+**How To Run (Windows):**
 
 1. Go into the Webapp folder
 2. Shift + Right click -> "Open Powershell window here"
@@ -9,7 +9,7 @@ How To Run (Windows):
 4. Type "php -S localhost:8000" (no quotes, you may need to install php via "sudo apt install php" first)
 5. In any web browser, type this in as the URL: 127.0.0.1:8000
 
-How To Run (Linux):
+**How To Run (Linux):**
 
 1. Open a terminal window in the Webapp folder, or navigate to that folder in the terminal
 2. Type "php -S localhost:8000" (no quotes, you may need to install php via "sudo apt install php" first)
