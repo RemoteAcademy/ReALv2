@@ -1,16 +1,21 @@
 # ReALv2
-RemoteAcademy version 2 builds upon the conceptual foundation of RemoteAcademy, although rebuilding it to be more robust and future-proof.
+RemoteAcademy Version 2 builds upon the conceptual foundation of RemoteAcademy, rebuilding the project to be more robust and future-proof.
 
-How To Run:
+How To Run (Windows):
 
-1. Go into Webapp folder
+1. Go into the Webapp folder
 2. Shift + Right click -> "Open Powershell window here"
-3. Type "bash" (no quotes)
-4. Type "php -S localhost:8000" (no quotes)
-5. In any web broswer, type in as the URL: 127.0.0.1:8000
+3. Type "bash" (no quotes, you will need to have the Linux Subsystem for Windows installed)
+4. Type "php -S localhost:8000" (no quotes, you may need to install php via "sudo apt install php" first)
+5. In any web browser, type this in as the URL: 127.0.0.1:8000
 
-To run the server on this machine such that it can be accessed by a different machine, use "php -S 0.0.0.0:80" instead.
-From the client machine, type in the IP address of the server with :80 appended.
+How To Run (Linux):
+
+1. Open a terminal window in the Webapp folder, or navigate to that folder in the terminal
+2. Type "php -S localhost:8000" (no quotes, you may need to install php via "sudo apt install php" first)
+3. In any web browser, type this in as the URL: 127.0.0.1:8000
+
+To run the server on your machine such that it can be accessed by a different (client) machine, use "php -S 0.0.0.0:80" instead of "php -S localhost:8000". Then, from the client machine, type in the IP address of the server with :80 appended.
 
 That's it!
 
