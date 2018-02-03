@@ -15,7 +15,7 @@ RemoteAcademy Version 2 builds upon the conceptual foundation of RemoteAcademy, 
 2. Type "php -S localhost:8000" (no quotes, you may need to install php via "sudo apt install php" first)
 3. In any web browser, type this in as the URL: 127.0.0.1:8000
 
-In either case, to run the server on your machine such that it can be accessed by a different (client) machine, use "php -S 0.0.0.0:80" instead of "php -S localhost:8000". Then, from the client machine, type in the IP address of the server with :80 appended.
+In either case, to run the server on your machine such that it can be accessed by a different (client) machine, use "php -S 0.0.0.0:80" instead of "php -S localhost:8000". Then, in a web browser on a client machine, type in the IP address of the server with :80 appended as the URL to connect to the server.
 
 That's it!
 
